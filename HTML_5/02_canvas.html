@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Grafico en 2D - (canvas)</title>
+</head>
+<body>
+	<h1>Graficos en 2D - (canvas)</h1>
+	
+	<hr>
+    <h3>Cuadrado</h3>
+	<canvas id="cuadrado"></canvas>
+
+	<hr>
+    <h3>Circulo</h3>
+	<canvas id="circulo"></canvas>
+
+	<hr>
+    <h3>Triangulo</h3>
+	<canvas id="triangulo"></canvas>
+
+	<hr>
+    <h3>texto</h3>
+	<canvas id="texto"></canvas>
+
+	<hr>
+    <h3>Estrella</h3>
+	<canvas id="estrella"></canvas>
+
+    <script>
+	var cuadrado = document.getElementById('cuadrado');
+	var cnvs = cuadrado.getContext('2d');
+	cnvs.fillStyle = '#751e53';
+	cnvs.fillRect(50,50,100,100);
+	</script>
+
+	<script>
+	var circulo=document.getElementById("circulo");
+        var circulo=circulo.getContext("2d");
+ 
+        circulo.fillStyle ="#BE4141";
+        circulo.beginPath();
+        circulo.arc(60,60,50,0,Math.PI*2,true);
+                circulo.closePath();
+        circulo.fill();
+        </script>
+
+        <script>
+        var triangulo=document.getElementById ('triangulo');
+         var triangulo= triangulo.getContext ('2d');
+         triangulo.fillStyle ="#183170";
+         triangulo.strokeStyle="#058B66"
+         triangulo.beginPath();
+         triangulo.moveTo(65,10);
+         triangulo.lineTo(140,140);
+         triangulo.lineTo(10,140);
+         triangulo.closePath();
+         triangulo.stroke();
+         triangulo.fill();
+        </script>
+
+        <script>
+        
+        var texto = document.getElementById('texto');
+	var texto = texto.getContext('2d');
+	texto.font="25pt comic sans";
+       
+	texto.fillStyle = '#50533E';
+	texto.fillRect(10,10,200,200);
+	texto.fillStyle='#CFD0CC';
+	texto.fillText("hola mundo",40,80);
+	
+       
+        </script>
+
+</body>
+</html>
