@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Atributos de campos de entradas (html 5)</title>
+</head>
+<body>
+	<h1>Atributos de campos de entradas (html 5)</h1>
+	<hr>
+	<form action="">
+		<fieldset>
+			<legend><h2>Required/Placeholder</h2></legend>
+			<input type="text"  placeholder="Ingrese Un Nombre" required>
+		</fieldset>
+			<br>
+		<fieldset>
+			<legend><h2>Min/Max/Step/autofocus</h2></legend>
+			<input type="number" name="edad"  placeholder="Ingrese Su Edad" min="17"  max="60" step="2" autofocus>
+		</fieldset>
+		    <br>
+		<fieldset>
+			<legend><h2>Multiple</h2></legend>
+			<label>Seleciones Sus Deportes Favoritos</label>
+			<select multiple>
+			<option value="1">Futbol</option>
+			<option value="2">Baloncesto</option>
+			<option value="3">Ciclismo</option>
+			<option value="4">Tejo</option>		
+			</select>
+	    </fieldset>
+	    <br>
+		<fieldset>
+			<legend><h2>Formmethod</h2></legend>
+			<input type="submit" value="Enviar Por Post" formmethod="post">
+			<input type="submit" value="Enviar Por Get" formmethod="get">
+		</fieldset>
+	</form>
+</body>
+</html>
